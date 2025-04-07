@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>rina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="spotify-player">
+        <p class="spotify-titulo">our song</p>
+        <iframe style="border-radius:12px" 
+          src="https://open.spotify.com/embed/track/1lytJzFHNjsjDuMIJKOf6y?utm_source=generator&theme=0" 
+          width="300" height="80" frameborder="0" allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+      </div>
+      
+  <h1>немного с опозданием, хаха</h1>
+
+  <button onclick="mostrarParabens()">click here / Нажми сюда</button>
+  <p id="mensagemParabens">happy birthday girl :D</p>
+
+  <button onclick="mostrarImagem()">click here / Нажми сюда</button>
+
+  <div id="imagemContainer">
+    <img id="imagem" src="https://townsquare.media/site/366/files/2022/08/attachment-Bam-Margera-Ville-Valo.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89&format=natural" alt="Imagem especial">
+    <div id="textoUS">US!</div>
+  </div>
+<div id="clock"></div>
+
+  <div class="morcegos">
+    <span class="morcego">🦇</span>
+    <span class="morcego">🦇</span>
+    <span class="morcego">🦇</span>
+  </div>
+  
+  <footer>
+    <p> by: Nicolas </p>
+  </footer>
+
+  <script>
+    function mostrarParabens() {
+      document.getElementById("mensagemParabens").style.display = "block";
+    }
+
+    function mostrarImagem() {
+      document.getElementById("imagemContainer").style.display = "block";
+    }
+  </script>
+  <div id="clock"></div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const clock = document.getElementById("clock");
+      clock.textContent = now.toLocaleTimeString();
+    }
+  
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+  <body>
+    <div class="conteudo">
+      <!-- tudo o que já tem: h1, botões, imagem, etc -->
+    </div>
+  </body>
+  
+</body>
+</html>
